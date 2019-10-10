@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function timmin() {
+        var a = [];
+        var min;
+        for (let i = 0; i < 3; i++) {
+            a[i] = prompt("Nhập phần tử: ");
+        }
+        for (i = 0; i < a.length; i++) {
+            min = a[0];
+            if (a[i] < min) {
+                min = a[i]
+            }
+        }
+        document.write("số nhỏ nhất là: " + min)
+    }
+
+    timmin();
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = [];
+    for (i = 0; i < 5; i++) {
+        a[i] = prompt("nhập vào phần tử của mảng: ");
+    }
+    var N = prompt("Nhập N: ");
+    function find(a,N) {
+        let result =[];
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] === N) {
+                result.push(i);
+            }
+        }
+        return result;
+    }
+    let count =find(a,N);
+    if(count.length>0){
+        alert(count.length);
+    } else alert( -1)
+
+</script>
+</body>
+</html>
